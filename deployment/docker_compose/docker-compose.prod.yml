@@ -41,7 +41,7 @@ services:
       - index
     restart: always
     env_file:
-      - env.prod
+      - .env
     environment:
       - AUTH_TYPE=${AUTH_TYPE:-google_oauth}
       - POSTGRES_HOST=relational_db
